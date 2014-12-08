@@ -1,0 +1,19 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Mantle (1.5.1):
+    - Mantle/extobjc (= 1.5.1)
+  - Mantle/extobjc (1.5.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - Mantle
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  Mantle: d7c5ac734579ec751c58fecbf56189853056c58c
+
+COCOAPODS: 0.35.0

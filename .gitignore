@@ -1,0 +1,61 @@
+#
+# .gitigore file for Objective-C
+#
+# http://chernyy.[ru|com]
+# alex@chernyy.ru
+#
+
+# Xcode
+
+build/*
+Build/*
+
+DerivedData/*
+*./xcuserdata/*
+
+!*.xcodeproj/xcshareddata
+
+*.pbxuser
+!default.pbxuser
+
+*.mode1v3
+!default.mode1v3
+
+*.mode2v3
+!default.mode2v3
+
+*.perspectivev3
+!default.perspectivev3
+
+*.xcworkspace
+!default.xcworkspace
+
+*.xccheckout
+
+*.hmap
+*.ipa
+
+*.moved-aside
+
+# AppCode
+
+.idea/*
+
+# OS
+
+.DS_Store
+[Tt]humbs.db
+
+profile
+
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+# CocoaPods
+
+Pods/*
+!Podfile.lock
+
