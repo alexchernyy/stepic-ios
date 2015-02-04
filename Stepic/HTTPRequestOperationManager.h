@@ -24,7 +24,8 @@ typedef void (^HTTPRequestFailureBlock)(AFHTTPRequestOperation *operation, NSErr
 - (HTTPRequestOperation *)operationWithRequest:(HTTPRequest *)request success:(HTTPRequestSucessBlock)success failure:(HTTPRequestFailureBlock)failure;
 
 /**
- * Base method is overriden because we want to use SHRequestOperation instead of AFHTTPRequestOperation
+ * Base method is overriden because we want to use 
+ * HTTPRequestOperation instead of AFHTTPRequestOperation
  */
 - (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSURLRequest *)request success:(HTTPRequestSucessBlock)success failure:(HTTPRequestFailureBlock)failure;
 

@@ -12,11 +12,15 @@ NSString * const kServerChangedNotification = @"kServerChangedNotification";
 
 static NSString * const kServerProductionName = @"Production";
 static NSString * const kServerProductionBaseURL = @"https://stepic.org";
-static NSString * const kServerBaseURLPostfix = @"/api";
+static NSString * const kServerBaseAPIURLPostfix = @"/api";
+static NSString * const kServerBaseMediaURLPostfix = @"/media";
 
 @interface NetworkManager ()
 
+@property (nonatomic, assign, readwrite) ServerType serverType;
 @property (nonatomic, copy, readwrite) NSString *baseURL;
+@property (nonatomic, copy, readwrite) NSString *baseAPIURL;
+@property (nonatomic, copy, readwrite) NSString *baseMediaURL;
 @property (nonatomic, strong) HTTPRequestOperationManager *operationManager;
 
 - (NSString *)baseURLOfServerWithType:(ServerType)type;
@@ -44,7 +48,11 @@ static NSString * const kServerBaseURLPostfix = @"/api";
     if (self)
     {
         _serverType = ServerTypeProduction;
-        _baseURL = [kServerProductionBaseURL stringByAppendingString:kServerBaseURLPostfix];
+        
+        _baseURL = kServerProductionBaseURL;
+        _baseAPIURL = [kServerProductionBaseURL stringByAppendingString:kServerBaseAPIURLPostfix];
+        _baseMediaURL = [kServerProductionBaseURL stringByAppendingString:kServerBaseMediaURLPostfix];
+        
         _operationManager = [[HTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:_baseURL]];
     }
     
@@ -97,12 +105,21 @@ static NSString * const kServerBaseURLPostfix = @"/api";
     _serverType = serverType;
     
     NSString *serverPath = [self baseURLOfServerWithType:_serverType];
-    self.baseURL = [serverPath stringByAppendingString:kServerBaseURLPostfix];
+    
+    self.baseURL = serverPath;
+    self.baseAPIURL = [serverPath stringByAppendingString:kServerBaseAPIURLPostfix];
+    self.baseMediaURL = [serverPath stringByAppendingString:kServerBaseMediaURLPostfix];
+    
     NSURL *serverURL = [NSURL URLWithString:serverPath];
     
     // Borrowed from AFHTTPRequestOperationManager
-    // Ensure terminal slash for baseURL path, so that NSURL +URLWithString:relativeToURL: works as expected
-    if ([[serverURL path] length] > 0 && ![[serverURL absoluteString] hasSuffix:@"/"])
+    // Ensure terminal slash for baseURL path,
+    // so that NSURL +URLWithString:relativeToURL: works as expected
+    
+    BOOL isServerURLSet = !!([[serverURL path] length] > 0);
+    BOOL hasServerURLSuffix = !!([[serverURL absoluteString] hasSuffix:@"/"]);
+    
+    if (isServerURLSet && !hasServerURLSuffix)
     {
         serverURL = [serverURL URLByAppendingPathComponent:@""];
     }
