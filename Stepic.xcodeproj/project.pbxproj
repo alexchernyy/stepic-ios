@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C28C6661A35DD6300F9550C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28C6651A35DD6300F9550C /* main.m */; };
+		9C28C6691A35DD6300F9550C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28C6681A35DD6300F9550C /* AppDelegate.m */; };
+		9C28C66C1A35DD6300F9550C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28C66B1A35DD6300F9550C /* ViewController.m */; };
+		9C28C66F1A35DD6300F9550C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C28C66D1A35DD6300F9550C /* Main.storyboard */; };
+		9C28C6711A35DD6300F9550C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28C6701A35DD6300F9550C /* Images.xcassets */; };
+		9C28C6741A35DD6300F9550C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C28C6721A35DD6300F9550C /* LaunchScreen.xib */; };
+		9C28C6801A35DD6300F9550C /* StepicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28C67F1A35DD6300F9550C /* StepicTests.m */; };
+		9C7F829E1A811B91007ECCFE /* NSString+UTCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */; };
+		9C7F82A11A813EBA007ECCFE /* CourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */; };
+		9C7F82AA1A829645007ECCFE /* ImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82A91A829645007ECCFE /* ImageRequest.m */; };
+		9C7F82AD1A829AA5007ECCFE /* ImageRequest+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */; };
+		9CFE67FC1A3F3F740055BA3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */; };
+		9CFE67FF1A3F45500055BA3A /* HTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE67FE1A3F45500055BA3A /* HTTPRequestOperationManager.m */; };
+		9CFE68021A3F46120055BA3A /* HTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68011A3F46120055BA3A /* HTTPRequestOperation.m */; };
+		9CFE68051A3F46D90055BA3A /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68041A3F46D90055BA3A /* HTTPRequest.m */; };
+		9CFE68081A3F47790055BA3A /* HTTPRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68071A3F47790055BA3A /* HTTPRequestParameters.m */; };
+		9CFE680B1A3F4A980055BA3A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE680A1A3F4A980055BA3A /* APIRequest.m */; };
+		9CFE680E1A3F55F10055BA3A /* APIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE680D1A3F55F10055BA3A /* APIResponseSerializer.m */; };
+		9CFE68111A3F5A360055BA3A /* APIRequest+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68101A3F5A360055BA3A /* APIRequest+Factory.m */; };
+		9CFE68141A3F5ABA0055BA3A /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68131A3F5ABA0055BA3A /* Course.m */; };
+		9CFE68171A3F6E7D0055BA3A /* Courses.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68161A3F6E7D0055BA3A /* Courses.m */; };
+		BFC8B64E18E0D47E659407BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 246B88CFAE8FCBD642464A21 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C28C67A1A35DD6300F9550C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C28C6581A35DD6300F9550C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C28C65F1A35DD6300F9550C;
+			remoteInfo = Stepic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		246B88CFAE8FCBD642464A21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C28C6601A35DD6300F9550C /* Stepic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C28C6641A35DD6300F9550C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C28C6651A35DD6300F9550C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C28C6671A35DD6300F9550C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C28C6681A35DD6300F9550C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C28C66A1A35DD6300F9550C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C28C66B1A35DD6300F9550C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C28C66E1A35DD6300F9550C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C28C6701A35DD6300F9550C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C28C6731A35DD6300F9550C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9C28C6791A35DD6300F9550C /* StepicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C28C67E1A35DD6300F9550C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C28C67F1A35DD6300F9550C /* StepicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepicTests.m; sourceTree = "<group>"; };
+		9C7F829C1A811B91007ECCFE /* NSString+UTCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UTCDate.h"; sourceTree = "<group>"; };
+		9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UTCDate.m"; sourceTree = "<group>"; };
+		9C7F829F1A813EBA007ECCFE /* CourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewCell.h; sourceTree = "<group>"; };
+		9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewCell.m; sourceTree = "<group>"; };
+		9C7F82A81A829645007ECCFE /* ImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRequest.h; sourceTree = "<group>"; };
+		9C7F82A91A829645007ECCFE /* ImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRequest.m; sourceTree = "<group>"; };
+		9C7F82AB1A829AA5007ECCFE /* ImageRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageRequest+Factory.h"; sourceTree = "<group>"; };
+		9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImageRequest+Factory.m"; sourceTree = "<group>"; };
+		9CFE67FA1A3F3F740055BA3A /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		9CFE67FD1A3F45500055BA3A /* HTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		9CFE67FE1A3F45500055BA3A /* HTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9CFE68001A3F46120055BA3A /* HTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestOperation.h; sourceTree = "<group>"; };
+		9CFE68011A3F46120055BA3A /* HTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestOperation.m; sourceTree = "<group>"; };
+		9CFE68031A3F46D90055BA3A /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		9CFE68041A3F46D90055BA3A /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		9CFE68061A3F47790055BA3A /* HTTPRequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestParameters.h; sourceTree = "<group>"; };
+		9CFE68071A3F47790055BA3A /* HTTPRequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestParameters.m; sourceTree = "<group>"; };
+		9CFE68091A3F4A980055BA3A /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		9CFE680A1A3F4A980055BA3A /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		9CFE680C1A3F55F10055BA3A /* APIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIResponseSerializer.h; sourceTree = "<group>"; };
+		9CFE680D1A3F55F10055BA3A /* APIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIResponseSerializer.m; sourceTree = "<group>"; };
+		9CFE680F1A3F5A360055BA3A /* APIRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIRequest+Factory.h"; sourceTree = "<group>"; };
+		9CFE68101A3F5A360055BA3A /* APIRequest+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "APIRequest+Factory.m"; sourceTree = "<group>"; };
+		9CFE68121A3F5ABA0055BA3A /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		9CFE68131A3F5ABA0055BA3A /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		9CFE68151A3F6E7D0055BA3A /* Courses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Courses.h; sourceTree = "<group>"; };
+		9CFE68161A3F6E7D0055BA3A /* Courses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Courses.m; sourceTree = "<group>"; };
+		AAD5737850DD204A6E177075 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BE58F947A2EC63DA7F0D42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C28C65D1A35DD6300F9550C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC8B64E18E0D47E659407BD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C28C6761A35DD6300F9550C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20932A7614111CB0BD8C41D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				246B88CFAE8FCBD642464A21 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E25481DB10173F73923A4E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAD5737850DD204A6E177075 /* Pods.debug.xcconfig */,
+				F0BE58F947A2EC63DA7F0D42 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C28C6571A35DD6300F9550C = {
+			isa = PBXGroup;
+			children = (
+				9C28C6621A35DD6300F9550C /* Stepic */,
+				9C28C67C1A35DD6300F9550C /* StepicTests */,
+				9C28C6611A35DD6300F9550C /* Products */,
+				2E25481DB10173F73923A4E2 /* Pods */,
+				20932A7614111CB0BD8C41D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C28C6611A35DD6300F9550C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C28C6601A35DD6300F9550C /* Stepic.app */,
+				9C28C6791A35DD6300F9550C /* StepicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C28C6621A35DD6300F9550C /* Stepic */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE67F81A3F3EDC0055BA3A /* Categories */,
+				9CFE67F71A3F3ED20055BA3A /* Controllers */,
+				9C28C6701A35DD6300F9550C /* Images.xcassets */,
+				9CFE67F61A3F3ECB0055BA3A /* Models */,
+				9CFE67F91A3F3EE40055BA3A /* Views */,
+				9C28C6631A35DD6300F9550C /* Supporting Files */,
+			);
+			path = Stepic;
+			sourceTree = "<group>";
+		};
+		9C28C6631A35DD6300F9550C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C28C6641A35DD6300F9550C /* Info.plist */,
+				9C28C6651A35DD6300F9550C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C28C67C1A35DD6300F9550C /* StepicTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C28C67F1A35DD6300F9550C /* StepicTests.m */,
+				9C28C67D1A35DD6300F9550C /* Supporting Files */,
+			);
+			path = StepicTests;
+			sourceTree = "<group>";
+		};
+		9C28C67D1A35DD6300F9550C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C28C67E1A35DD6300F9550C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CFE67F61A3F3ECB0055BA3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE680C1A3F55F10055BA3A /* APIResponseSerializer.h */,
+				9CFE680D1A3F55F10055BA3A /* APIResponseSerializer.m */,
+				9CFE68091A3F4A980055BA3A /* APIRequest.h */,
+				9CFE680A1A3F4A980055BA3A /* APIRequest.m */,
+				9C28C6671A35DD6300F9550C /* AppDelegate.h */,
+				9C28C6681A35DD6300F9550C /* AppDelegate.m */,
+				9CFE68121A3F5ABA0055BA3A /* Course.h */,
+				9CFE68131A3F5ABA0055BA3A /* Course.m */,
+				9CFE68151A3F6E7D0055BA3A /* Courses.h */,
+				9CFE68161A3F6E7D0055BA3A /* Courses.m */,
+				9CFE68031A3F46D90055BA3A /* HTTPRequest.h */,
+				9CFE68041A3F46D90055BA3A /* HTTPRequest.m */,
+				9CFE68001A3F46120055BA3A /* HTTPRequestOperation.h */,
+				9CFE68011A3F46120055BA3A /* HTTPRequestOperation.m */,
+				9CFE67FD1A3F45500055BA3A /* HTTPRequestOperationManager.h */,
+				9CFE67FE1A3F45500055BA3A /* HTTPRequestOperationManager.m */,
+				9CFE68061A3F47790055BA3A /* HTTPRequestParameters.h */,
+				9CFE68071A3F47790055BA3A /* HTTPRequestParameters.m */,
+				9C7F82A81A829645007ECCFE /* ImageRequest.h */,
+				9C7F82A91A829645007ECCFE /* ImageRequest.m */,
+				9CFE67FA1A3F3F740055BA3A /* NetworkManager.h */,
+				9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9CFE67F71A3F3ED20055BA3A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C28C66A1A35DD6300F9550C /* ViewController.h */,
+				9C28C66B1A35DD6300F9550C /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9CFE67F81A3F3EDC0055BA3A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE680F1A3F5A360055BA3A /* APIRequest+Factory.h */,
+				9CFE68101A3F5A360055BA3A /* APIRequest+Factory.m */,
+				9C7F82AB1A829AA5007ECCFE /* ImageRequest+Factory.h */,
+				9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */,
+				9C7F829C1A811B91007ECCFE /* NSString+UTCDate.h */,
+				9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9CFE67F91A3F3EE40055BA3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F829F1A813EBA007ECCFE /* CourseTableViewCell.h */,
+				9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */,
+				9C28C6721A35DD6300F9550C /* LaunchScreen.xib */,
+				9C28C66D1A35DD6300F9550C /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C28C65F1A35DD6300F9550C /* Stepic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C28C6831A35DD6300F9550C /* Build configuration list for PBXNativeTarget "Stepic" */;
+			buildPhases = (
+				3D6A490451D094F41CD22C1D /* Check Pods Manifest.lock */,
+				9C28C65C1A35DD6300F9550C /* Sources */,
+				9C28C65D1A35DD6300F9550C /* Frameworks */,
+				9C28C65E1A35DD6300F9550C /* Resources */,
+				CE181D57637831124854D29A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stepic;
+			productName = Stepic;
+			productReference = 9C28C6601A35DD6300F9550C /* Stepic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C28C6781A35DD6300F9550C /* StepicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C28C6861A35DD6300F9550C /* Build configuration list for PBXNativeTarget "StepicTests" */;
+			buildPhases = (
+				9C28C6751A35DD6300F9550C /* Sources */,
+				9C28C6761A35DD6300F9550C /* Frameworks */,
+				9C28C6771A35DD6300F9550C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C28C67B1A35DD6300F9550C /* PBXTargetDependency */,
+			);
+			name = StepicTests;
+			productName = StepicTests;
+			productReference = 9C28C6791A35DD6300F9550C /* StepicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C28C6581A35DD6300F9550C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alexander Chernyy";
+				TargetAttributes = {
+					9C28C65F1A35DD6300F9550C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9C28C6781A35DD6300F9550C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9C28C65F1A35DD6300F9550C;
+					};
+				};
+			};
+			buildConfigurationList = 9C28C65B1A35DD6300F9550C /* Build configuration list for PBXProject "Stepic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C28C6571A35DD6300F9550C;
+			productRefGroup = 9C28C6611A35DD6300F9550C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C28C65F1A35DD6300F9550C /* Stepic */,
+				9C28C6781A35DD6300F9550C /* StepicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C28C65E1A35DD6300F9550C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C28C66F1A35DD6300F9550C /* Main.storyboard in Resources */,
+				9C28C6741A35DD6300F9550C /* LaunchScreen.xib in Resources */,
+				9C28C6711A35DD6300F9550C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C28C6771A35DD6300F9550C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D6A490451D094F41CD22C1D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE181D57637831124854D29A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C28C65C1A35DD6300F9550C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFE67FC1A3F3F740055BA3A /* NetworkManager.m in Sources */,
+				9CFE680E1A3F55F10055BA3A /* APIResponseSerializer.m in Sources */,
+				9CFE68171A3F6E7D0055BA3A /* Courses.m in Sources */,
+				9CFE67FF1A3F45500055BA3A /* HTTPRequestOperationManager.m in Sources */,
+				9C7F829E1A811B91007ECCFE /* NSString+UTCDate.m in Sources */,
+				9C7F82AA1A829645007ECCFE /* ImageRequest.m in Sources */,
+				9C7F82A11A813EBA007ECCFE /* CourseTableViewCell.m in Sources */,
+				9CFE68111A3F5A360055BA3A /* APIRequest+Factory.m in Sources */,
+				9CFE68141A3F5ABA0055BA3A /* Course.m in Sources */,
+				9C28C66C1A35DD6300F9550C /* ViewController.m in Sources */,
+				9C7F82AD1A829AA5007ECCFE /* ImageRequest+Factory.m in Sources */,
+				9CFE68081A3F47790055BA3A /* HTTPRequestParameters.m in Sources */,
+				9CFE68021A3F46120055BA3A /* HTTPRequestOperation.m in Sources */,
+				9CFE680B1A3F4A980055BA3A /* APIRequest.m in Sources */,
+				9C28C6691A35DD6300F9550C /* AppDelegate.m in Sources */,
+				9CFE68051A3F46D90055BA3A /* HTTPRequest.m in Sources */,
+				9C28C6661A35DD6300F9550C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C28C6751A35DD6300F9550C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C28C6801A35DD6300F9550C /* StepicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C28C67B1A35DD6300F9550C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C28C65F1A35DD6300F9550C /* Stepic */;
+			targetProxy = 9C28C67A1A35DD6300F9550C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C28C66D1A35DD6300F9550C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C28C66E1A35DD6300F9550C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C28C6721A35DD6300F9550C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C28C6731A35DD6300F9550C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C28C6811A35DD6300F9550C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C28C6821A35DD6300F9550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C28C6841A35DD6300F9550C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD5737850DD204A6E177075 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stepic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C28C6851A35DD6300F9550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BE58F947A2EC63DA7F0D42 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stepic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C28C6871A35DD6300F9550C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StepicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stepic.app/Stepic";
+			};
+			name = Debug;
+		};
+		9C28C6881A35DD6300F9550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StepicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stepic.app/Stepic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C28C65B1A35DD6300F9550C /* Build configuration list for PBXProject "Stepic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C28C6811A35DD6300F9550C /* Debug */,
+				9C28C6821A35DD6300F9550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C28C6831A35DD6300F9550C /* Build configuration list for PBXNativeTarget "Stepic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C28C6841A35DD6300F9550C /* Debug */,
+				9C28C6851A35DD6300F9550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C28C6861A35DD6300F9550C /* Build configuration list for PBXNativeTarget "StepicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C28C6871A35DD6300F9550C /* Debug */,
+				9C28C6881A35DD6300F9550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C28C6581A35DD6300F9550C /* Project object */;
+}
