@@ -14,6 +14,10 @@
 		9C28C6711A35DD6300F9550C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28C6701A35DD6300F9550C /* Images.xcassets */; };
 		9C28C6741A35DD6300F9550C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C28C6721A35DD6300F9550C /* LaunchScreen.xib */; };
 		9C28C6801A35DD6300F9550C /* StepicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28C67F1A35DD6300F9550C /* StepicTests.m */; };
+		9C7F829E1A811B91007ECCFE /* NSString+UTCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */; };
+		9C7F82A11A813EBA007ECCFE /* CourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */; };
+		9C7F82AA1A829645007ECCFE /* ImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82A91A829645007ECCFE /* ImageRequest.m */; };
+		9C7F82AD1A829AA5007ECCFE /* ImageRequest+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */; };
 		9CFE67FC1A3F3F740055BA3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */; };
 		9CFE67FF1A3F45500055BA3A /* HTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE67FE1A3F45500055BA3A /* HTTPRequestOperationManager.m */; };
 		9CFE68021A3F46120055BA3A /* HTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE68011A3F46120055BA3A /* HTTPRequestOperation.m */; };
@@ -52,6 +56,14 @@
 		9C28C6791A35DD6300F9550C /* StepicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C28C67E1A35DD6300F9550C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C28C67F1A35DD6300F9550C /* StepicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepicTests.m; sourceTree = "<group>"; };
+		9C7F829C1A811B91007ECCFE /* NSString+UTCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UTCDate.h"; sourceTree = "<group>"; };
+		9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UTCDate.m"; sourceTree = "<group>"; };
+		9C7F829F1A813EBA007ECCFE /* CourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewCell.h; sourceTree = "<group>"; };
+		9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewCell.m; sourceTree = "<group>"; };
+		9C7F82A81A829645007ECCFE /* ImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRequest.h; sourceTree = "<group>"; };
+		9C7F82A91A829645007ECCFE /* ImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRequest.m; sourceTree = "<group>"; };
+		9C7F82AB1A829AA5007ECCFE /* ImageRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageRequest+Factory.h"; sourceTree = "<group>"; };
+		9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImageRequest+Factory.m"; sourceTree = "<group>"; };
 		9CFE67FA1A3F3F740055BA3A /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		9CFE67FD1A3F45500055BA3A /* HTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -192,6 +204,8 @@
 				9CFE67FE1A3F45500055BA3A /* HTTPRequestOperationManager.m */,
 				9CFE68061A3F47790055BA3A /* HTTPRequestParameters.h */,
 				9CFE68071A3F47790055BA3A /* HTTPRequestParameters.m */,
+				9C7F82A81A829645007ECCFE /* ImageRequest.h */,
+				9C7F82A91A829645007ECCFE /* ImageRequest.m */,
 				9CFE67FA1A3F3F740055BA3A /* NetworkManager.h */,
 				9CFE67FB1A3F3F740055BA3A /* NetworkManager.m */,
 			);
@@ -212,6 +226,10 @@
 			children = (
 				9CFE680F1A3F5A360055BA3A /* APIRequest+Factory.h */,
 				9CFE68101A3F5A360055BA3A /* APIRequest+Factory.m */,
+				9C7F82AB1A829AA5007ECCFE /* ImageRequest+Factory.h */,
+				9C7F82AC1A829AA5007ECCFE /* ImageRequest+Factory.m */,
+				9C7F829C1A811B91007ECCFE /* NSString+UTCDate.h */,
+				9C7F829D1A811B91007ECCFE /* NSString+UTCDate.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -219,8 +237,10 @@
 		9CFE67F91A3F3EE40055BA3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9C28C66D1A35DD6300F9550C /* Main.storyboard */,
+				9C7F829F1A813EBA007ECCFE /* CourseTableViewCell.h */,
+				9C7F82A01A813EBA007ECCFE /* CourseTableViewCell.m */,
 				9C28C6721A35DD6300F9550C /* LaunchScreen.xib */,
+				9C28C66D1A35DD6300F9550C /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -365,9 +385,13 @@
 				9CFE680E1A3F55F10055BA3A /* APIResponseSerializer.m in Sources */,
 				9CFE68171A3F6E7D0055BA3A /* Courses.m in Sources */,
 				9CFE67FF1A3F45500055BA3A /* HTTPRequestOperationManager.m in Sources */,
+				9C7F829E1A811B91007ECCFE /* NSString+UTCDate.m in Sources */,
+				9C7F82AA1A829645007ECCFE /* ImageRequest.m in Sources */,
+				9C7F82A11A813EBA007ECCFE /* CourseTableViewCell.m in Sources */,
 				9CFE68111A3F5A360055BA3A /* APIRequest+Factory.m in Sources */,
 				9CFE68141A3F5ABA0055BA3A /* Course.m in Sources */,
 				9C28C66C1A35DD6300F9550C /* ViewController.m in Sources */,
+				9C7F82AD1A829AA5007ECCFE /* ImageRequest+Factory.m in Sources */,
 				9CFE68081A3F47790055BA3A /* HTTPRequestParameters.m in Sources */,
 				9CFE68021A3F46120055BA3A /* HTTPRequestOperation.m in Sources */,
 				9CFE680B1A3F4A980055BA3A /* APIRequest.m in Sources */,

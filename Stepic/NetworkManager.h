@@ -24,8 +24,10 @@ typedef NS_ENUM(NSInteger, ServerType)
 
 + (instancetype)sharedInstance;
 
-@property (nonatomic, assign) ServerType serverType;
+@property (nonatomic, assign, readonly) ServerType serverType;
 @property (nonatomic, copy, readonly) NSString *baseURL;
+@property (nonatomic, copy, readonly) NSString *baseAPIURL;
+@property (nonatomic, copy, readonly) NSString *baseMediaURL;
 
 - (AFNetworkReachabilityManager *)reachabilityManager;
 

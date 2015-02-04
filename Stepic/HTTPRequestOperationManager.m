@@ -6,11 +6,13 @@
 //  Copyright (c) 2014 Alexander Chernyy. All rights reserved.
 //
 
+#import <AFNetworking/AFNetworking.h>
 #import "APIRequest.h"
 #import "APIResponseSerializer.h"
 #import "HTTPRequest.h"
 #import "HTTPRequestOperation.h"
 #import "HTTPRequestOperationManager.h"
+#import "ImageRequest.h"
 
 @implementation HTTPRequestOperationManager
 
@@ -61,12 +63,19 @@
     
     operation.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    // TODO: Bad work
+    // TODO
+    // Bad work
+    // I am so sorry
     
     if ([request isKindOfClass:[APIRequest class]])
     {
         APIRequest *apiRequest = (APIRequest *)request;
         operation.responseSerializer = [APIResponseSerializer serializerWithModelClass:apiRequest.responseClass];
+    }
+    
+    if ([request isKindOfClass:[ImageRequest class]])
+    {
+        operation.responseSerializer = [AFImageResponseSerializer serializer];
     }
     
     return operation;
